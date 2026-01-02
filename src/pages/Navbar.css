@@ -1,0 +1,53 @@
+/* Navbar container */
+.navbar {
+  list-style-type: none; /* Removes default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Spreads items across the navbar */
+  background-color: #2c3e50; /* Dark blue-gray background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navbar list items */
+.navbar li {
+  display: inline; /* Makes the list items inline */
+}
+
+/* Navbar links */
+.navbar li a {
+  color: #028b0ee8; /* Light gray text */
+  text-decoration: none; /* Removes underline */
+  padding: 14px 20px; /* Adds padding to make the links clickable */
+  display: block; /* Ensures the entire area is clickable */
+  text-align: center;
+  font-weight: 500; /* Slightly bolder text */
+  font-size: 16px; /* Adjusts font size */
+  border-radius: 4px; /* Rounded corners for the links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Navbar link hover effect */
+.navbar li a:hover {
+  background-color: #c3f707; /* Bright blue background on hover */
+  color: #c50ad6; /* Change text color to white */
+}
+
+/* Active link color (when selected or visited) */
+.navbar li a:active {
+  background-color: #beee13; /* Darker blue on click */
+  color: #f80404; /* Keep text white */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically on smaller screens */
+  }
+
+  .navbar li a {
+    padding: 12px 18px; /* Adjust padding for smaller screens */
+    font-size: 18px; /* Larger font size for better readability */
+  }
+}
