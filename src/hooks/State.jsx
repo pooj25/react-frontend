@@ -19,10 +19,13 @@
 // }
 // export default State
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 const State = () => {
   const [count, setCount] = useState(0);
   const [Like, setLike] = useState(0);
+  useEffect(()=>{
+    console.log("from useEffect");
+  },[count])
   return (
     <div>
       <h1>useState Example</h1>
@@ -30,7 +33,7 @@ const State = () => {
       <button onClick={() => setCount(count + 1)}>+</button>
       <button onClick={() => setCount(count - 1)}>-</button>
       <h1>Like: {Like}</h1>
-      <button onClick={() => setLike(Like + 1)}>❤</button>
+      <button onClick={() => setLike(Like + 1)}>💙</button>
       <button onClick={() => setLike(Like - 1)}>💔</button>
     </div>
   );

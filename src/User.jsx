@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { userContext } from './pages/Home';
 
-const User = (props) => {
+const User = ({ name }) => {
+  const a = useContext(userContext);
+
   return (
     <div>
-       I am {props.name}
-
+      <h3>useContext value: {a}</h3>
+      <p>I am {name}</p>
     </div>
-  )
-}
+  );
+};
 
-export default User
+export default User;
