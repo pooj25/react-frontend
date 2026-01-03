@@ -65,7 +65,10 @@ import { Route, Routes } from 'react-router-dom'
 import Contact from './pages/Contact'
 import About from './pages/About'
 import Navbar from './pages/Navbar'
+
+
 import Services from './pages/services'
+
 
 
 const App = () => {
