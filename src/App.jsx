@@ -66,6 +66,8 @@ import Contact from './pages/Contact'
 import About from './pages/About'
 import Navbar from './pages/Navbar'
 import Services from './pages/services'
+//import Services from "./pages/Services";
+
 
 const App = () => {
   return (
